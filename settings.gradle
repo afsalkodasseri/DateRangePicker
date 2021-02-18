@@ -1,0 +1,3 @@
+include ':rangedialog'
+include ':app'
+rootProject.name = "dateranger"
