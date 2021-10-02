@@ -53,6 +53,7 @@ dialog.showPicker();
 Set On Date Range Selected
 
 ```
+//(version 1.0.0)
 dialog.setRangeSelected(new PickerDialog.OnRangeSelect() {
                     @Override
                     public void OnSelect(Date StartDate, Date EndDate) {
@@ -61,9 +62,21 @@ dialog.setRangeSelected(new PickerDialog.OnRangeSelect() {
                         
                     }
                 });
+    
+    
+//(version 1.0.1) function name changed for suitable naming experience
+dialog.setOnRangeSelection(new PickerDialog.OnRangeSelect() {
+    @Override
+    public void OnSelect(Date StartDate, Date EndDate) {
+
+        //Do Something here
+
+    }
+});
                 
                 
 ```
+
                 
                 
                 
