@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 Date tempStart=new Date(),tempEnd=new Date();
                 try {
                      tempStart = new SimpleDateFormat("dd-MM-yyyy").parse("09-02-2021");
-                     tempEnd = new SimpleDateFormat("dd-MM-yyyy").parse("25-02-2021");
+                     tempEnd = new SimpleDateFormat("dd-MM-yyyy").parse("25-12-2021");
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -36,10 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 dialog.setMinDateRange(tempStart,true);
                 dialog.setMidDrawable(R.drawable.crfd);
                 dialog.showPicker();
-                dialog.setRangeSelected(new PickerDialog.OnRangeSelect() {
+                dialog.setOnRangeSelection(new PickerDialog.OnRangeSelect() {
                     @Override
                     public void OnSelect(Date StartDate, Date EndDate) {
                         Toast.makeText(getApplicationContext(),StartDate.toString()+" :: "+EndDate.toString(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),EndDate.toString(),Toast.LENGTH_SHORT).show();
                     }
                 });
 

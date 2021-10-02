@@ -400,7 +400,7 @@ public class PickerDialog {
         dateRanger.setMinDate(rangeMin,isDisabledDateColor);
     }
 
-    public void setRangeSelected(OnRangeSelect rangeListener)
+    public void setOnRangeSelection(OnRangeSelect rangeListener)
     {
         if(isSetRanger==0)
             isSetRanger=1;
